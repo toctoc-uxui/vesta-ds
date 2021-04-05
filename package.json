@@ -1,11 +1,14 @@
 {
-  "name": "vesta",
+  "name": "vesta-ds",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
+    "@babel/cli": "^7.13.14",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "auto": "^10.24.1",
+    "cross-env": "^7.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -14,7 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
@@ -36,6 +39,16 @@
       }
     ]
   },
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -49,11 +62,27 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.13.14",
     "@storybook/addon-actions": "^6.2.1",
     "@storybook/addon-essentials": "^6.2.1",
     "@storybook/addon-links": "^6.2.1",
     "@storybook/node-logger": "^6.2.1",
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.2.1"
-  }
+  },
+  "description": "Vesta design system para TOCTOC.com .",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toctoc-uxui/vesta-ds.git"
+  },
+  "keywords": [
+    "designsystem"
+  ],
+  "author": "Zesak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toctoc-uxui/vesta-ds/issues"
+  },
+  "homepage": "https://github.com/toctoc-uxui/vesta-ds#readme"
 }
