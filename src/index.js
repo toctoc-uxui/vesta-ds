@@ -5,7 +5,16 @@ import * as global from './shared/global';
 export { styles, global };
 
 
-export * from './Button';
+//export * from './Button';
+
+
+const {Button} = './components/button/Button' 
+export {Button}
+const {Header} = './components/header/Header' 
+export {Header}
+
+
+
 
 // import React from 'react';
 // import ReactDOM from 'react-dom';
