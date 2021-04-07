@@ -4,10 +4,6 @@ import * as global from './shared/global';
 
 export { styles, global };
 
-
-//export * from './Button';
-
-
 const {Button} = './components/button/Button' 
 export {Button}
 const {Header} = './components/header/Header' 

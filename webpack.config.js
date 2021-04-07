@@ -8,7 +8,7 @@ module.exports = {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
     library: '',
-    libraryTarget: 'commonjs'
+    libraryTarget: 'commonjs2'
   },
   plugins: [new CleanWebpackPlugin()],
   module: {
