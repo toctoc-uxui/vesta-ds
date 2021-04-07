@@ -1,3 +1,3 @@
 # Vesta DS 2021
 
-Vesta design system para TOCTOC.com .
+Vesta Design System para TOCTOC.com .

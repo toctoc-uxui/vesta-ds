@@ -1,27 +1,6 @@
-
 import * as styles from './shared/styles';
 import * as global from './shared/global';
-
 export { styles, global };
 
-const {Button} = './components/button/Button' 
-export {Button}
-const {Header} = './components/header/Header' 
-export {Header}
-
-
-
-
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import './index.css';
-// import App from './App';
-// import reportWebVitals from './reportWebVitals';
-
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
-// reportWebVitals();
+export {Button} from './components/button/Button';
+export {Header} from './components/header/Header';

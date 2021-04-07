@@ -1,6 +1,6 @@
 {
   "name": "vesta-ds",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "private": false,
   "dependencies": {
     "@babel/cli": "^7.13.14",
@@ -39,16 +39,6 @@
       }
     ]
   },
-  "babel": {
-    "presets": [
-      [
-        "react-app",
-        {
-          "absoluteRuntime": false
-        }
-      ]
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -70,7 +60,11 @@
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.2.1",
     "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.6.0",
+    "node-sass": "^4.14.1",
     "path": "^0.12.7",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^1.3.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^4.6.0",
     "webpack-node-externals": "^2.5.2"
@@ -84,7 +78,7 @@
   "keywords": [
     "designsystem"
   ],
-  "author": "Zesak",
+  "author": "@toctoc-uxui",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/toctoc-uxui/vesta-ds/issues"

@@ -7,8 +7,9 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
-    library: '',
-    libraryTarget: 'commonjs2'
+    library: 'libreriaVesta',
+    libraryTarget: 'commonjs2',
+	//umdNamedDefine:true
   },
   plugins: [new CleanWebpackPlugin()],
   module: {
@@ -17,12 +18,12 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader']
+      },
+      { 
+        test: /\.(sa|sc|c)ss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+        include: path.resolve(__dirname, './src')
       }
-    //   { 
-    //     test: /\.scss$/,
-    //     use: ['style-loader', 'css-loader', 'sass-loader'],
-    //     include: path.resolve(__dirname, './src')
-    //   }
     ]
   }
 }
